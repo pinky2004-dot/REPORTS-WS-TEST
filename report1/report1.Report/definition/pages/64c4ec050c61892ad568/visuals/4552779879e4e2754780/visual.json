@@ -22,7 +22,8 @@
                     "value": "Sum of Reviews and TotalAvgCustSpend",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "16pt"
+                      "fontSize": "16pt",
+                      "textDecoration": "underline"
                     }
                   }
                 ],
