@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "average_menu_price"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "964a54f6-ee47-478b-b11b-daff583f5a94"
+  }
+}
