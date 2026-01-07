@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "promotions"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9767220d-dd90-4185-86c8-33635cfd4631"
+  }
+}

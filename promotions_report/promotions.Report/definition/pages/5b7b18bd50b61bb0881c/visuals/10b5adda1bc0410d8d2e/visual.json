@@ -1,0 +1,121 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "10b5adda1bc0410d8d2e",
+  "position": {
+    "x": 222.29920099164141,
+    "y": 105.66073133553327,
+    "z": 0,
+    "height": 507.7203973265884,
+    "width": 928.99110537864965,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "factrestaurant"
+                        }
+                      },
+                      "Property": "Marketing_Spend"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(factrestaurant.Marketing_Spend)",
+              "nativeQueryRef": "Sum of Marketing_Spend"
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimpromotions"
+                    }
+                  },
+                  "Property": "PromotionName"
+                }
+              },
+              "queryRef": "dimpromotions.PromotionName",
+              "nativeQueryRef": "PromotionName"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "factrestaurant"
+                      }
+                    },
+                    "Property": "Marketing_Spend"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "bf596e2410158d2d8ad5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimpromotions"
+              }
+            },
+            "Property": "PromotionName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4f5332cb9d1c49ca7856",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "factrestaurant"
+                  }
+                },
+                "Property": "Marketing_Spend"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
