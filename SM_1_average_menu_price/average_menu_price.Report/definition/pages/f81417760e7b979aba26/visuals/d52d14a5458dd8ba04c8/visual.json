@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "d52d14a5458dd8ba04c8",
   "position": {
-    "x": 499.48709358615724,
-    "y": 194.8548551902042,
+    "x": 351.2876262583963,
+    "y": 108.40516591567699,
     "z": 0,
-    "height": 279.93232717465958,
-    "width": 279.93232717465958,
+    "height": 543.39804686845685,
+    "width": 717.66964270758308,
     "tabOrder": 0
   },
   "visual": {
@@ -28,6 +28,24 @@
               },
               "queryRef": "factrestaurant.AvgMenuPrice",
               "nativeQueryRef": "AvgMenuPrice"
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimcuisinetype"
+                    }
+                  },
+                  "Property": "Cuisine_Type"
+                }
+              },
+              "queryRef": "dimcuisinetype.Cuisine_Type",
+              "nativeQueryRef": "Cuisine_Type"
             }
           ]
         }
@@ -68,6 +86,20 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "0acdc9f4b144195b7dab",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimcuisinetype"
+              }
+            },
+            "Property": "Cuisine_Type"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
