@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "customer_spending_by_cuisine_type"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5d8e6e1e-9e47-4206-be57-ec66ba385fa6"
+  }
+}
