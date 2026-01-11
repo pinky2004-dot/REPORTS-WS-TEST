@@ -1,0 +1,121 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "4446eb071e6005a50638",
+  "position": {
+    "x": 266.09744779582365,
+    "y": 91.233410672853822,
+    "z": 0,
+    "height": 538.27712296983759,
+    "width": 748.11396751740142,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "factrestaurant"
+                        }
+                      },
+                      "Property": "Average_Customer_Spending"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(factrestaurant.Average_Customer_Spending)",
+              "nativeQueryRef": "Sum of Average_Customer_Spending"
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimcuisinetype"
+                    }
+                  },
+                  "Property": "Cuisine_Type"
+                }
+              },
+              "queryRef": "dimcuisinetype.Cuisine_Type",
+              "nativeQueryRef": "Cuisine_Type"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "factrestaurant"
+                      }
+                    },
+                    "Property": "Average_Customer_Spending"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "531ab5b00d0c670d6394",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "factrestaurant"
+                  }
+                },
+                "Property": "Average_Customer_Spending"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c6d5ab04a844116db7e2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimcuisinetype"
+              }
+            },
+            "Property": "Cuisine_Type"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
