@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "58f4cec614778835947d",
+  "position": {
+    "x": 104.863012284505,
+    "y": 37.20945597192113,
+    "z": 0,
+    "height": 647.78280169299057,
+    "width": 1067.2348508310106,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "SCT_APPOINTMENTS"
+                    }
+                  },
+                  "Property": "NATURE_OF_VISIT"
+                }
+              },
+              "queryRef": "SCT_APPOINTMENTS.NATURE_OF_VISIT",
+              "nativeQueryRef": "NATURE_OF_VISIT"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "40dd3730cec4e7238217",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "SCT_APPOINTMENTS"
+              }
+            },
+            "Property": "NATURE_OF_VISIT"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
