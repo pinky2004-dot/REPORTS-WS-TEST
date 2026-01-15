@@ -22,13 +22,28 @@
                     "value": "Nature of Visit",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "20pt"
+                      "fontSize": "16pt"
                     }
                   }
                 ],
                 "horizontalTextAlignment": "center"
               }
             ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
           }
         }
       ]
